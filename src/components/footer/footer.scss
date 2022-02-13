@@ -1,0 +1,82 @@
+.footer {
+    min-height: 60vh;
+    background-color: #000;
+    background-image: url("../../public/images/footer.png");
+    background-size: 100% 100%;
+    position: relative;
+    .foter-body {
+        height: 90%;
+        padding-top: 2%;
+        .content {
+            background-color: rgba(0, 0, 0, 0.507);
+            height: 95%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            .f-title {
+                color: white;
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+            .input {
+                width: 90%;
+                margin: 2rem auto;
+
+                input,
+                textarea {
+                    height: 1.5rem;
+                    background: none;
+                    width: 50%;
+                    border: 1px solid gray;
+                    border-radius: 0.3rem;
+                    color: white;
+                    padding: 0.5rem;
+                }
+                textarea {
+                    width: 80%;
+                    height: 15rem;
+                    resize: none;
+                }
+            }
+
+            .button {
+                text-align: center;
+                width: 80%;
+                button {
+                    width: 7rem;
+                    color: #0ad663;
+                    background-color: none;
+                    border: 1px solid gray;
+                    border-radius: 0.3rem;
+                    background: none;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+    .list {
+        display: grid;
+        height: 80%;
+       
+        li {
+            display: grid;
+            grid-template-columns: 5rem 1fr;
+            place-items: center;
+            i {
+                padding-right: 2rem;
+                font-size: 1.5rem;
+                color: #0ad663;
+            }
+            .icon{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 3rem 1fr;
+                color: white;
+                font-size: 1.3rem;
+            }
+        }
+        .dis{
+            color: white;
+            font-size: 1.3rem;
+        }
+    }
+}

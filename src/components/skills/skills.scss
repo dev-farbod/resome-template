@@ -1,0 +1,44 @@
+.skills-container {
+    background-color: #000;
+    min-height: 80vh;
+    .skills {
+        padding-top: 2rem;
+        color: white;
+       
+    }
+    .skills-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr );
+    }
+    .chart{
+        margin:3rem 3rem;
+        position: relative;
+        width: 150px;
+        height: 150px;
+        
+        
+        span{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 2rem;
+        }
+    }
+    .each-chart{
+        height:max-content;
+    }
+    .label{
+        text-align: center;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}
+
+.g-title {
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    border-bottom: 2px solid #0ad663;
+    span {
+        color: #0ad663;
+    }
+}

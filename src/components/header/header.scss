@@ -1,0 +1,82 @@
+.header-container {
+    background: black;
+    background-image: url("../../public/images/Group\ 2.png");
+    background-repeat: no-repeat;
+    background-size: 25% 55%;
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    .header {
+        .social-media {
+            position: absolute;
+            height: 14rem;
+            right: 0;
+            width: 10rem;
+            top: calc(50% - 10rem);
+            border: 2px solid gray;
+            padding: 0.5rem;
+            display: grid;
+            place-items: center;
+            transition: 0.5s;
+            transform: translate(6.5rem);
+            ul{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                li{
+                    cursor: pointer;
+                    display: grid;
+                    grid-template-columns: 4rem 1fr;
+                    place-items: center;
+                    i{
+                        color: #0ad663;
+                        font-size: 1.6rem;
+                    }
+                    &:hover{
+                        border-bottom: 1px solid #0ad663;
+                    }
+                }
+            }
+            &:hover{
+                transform: translate(0.3rem);
+            }
+        }
+        height: 40rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .img {
+            display: grid;
+            place-items: center;
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+        .info {
+            font-size: 1.3rem;
+            .title {
+                font-size: 3rem;
+                padding: 2rem 0;
+                color: #0ad663;
+            }
+            .sub-title {
+                color: #0ad663;
+            }
+            .dis {
+                line-height: 2rem;
+                margin: 2rem 0;
+                border-left: 3px solid #0ad663;
+                padding-left: 1rem;
+            }
+            .services {
+                margin-top: 2rem;
+                li {
+                    display: grid;
+                    grid-template-columns: 5rem 1fr;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}
